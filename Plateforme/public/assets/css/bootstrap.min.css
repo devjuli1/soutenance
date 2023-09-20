@@ -4769,6 +4769,11 @@ fieldset:disabled .btn {
 .navbar-dark .navbar-brand {
     color: #fff
 }
+.navbar-brand{
+    display: block;
+    width: 80px;
+    height: 100px;
+}
 
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {

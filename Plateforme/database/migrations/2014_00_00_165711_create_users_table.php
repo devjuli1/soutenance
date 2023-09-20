@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
+            $table->string('photo')->nullable();
             $table->string('ville');
+            $table->integer('age');
             $table->string('profession')->nullable();
             $table->string('email')->unique();
             $table->foreignId('role_id')->constrained('roles');

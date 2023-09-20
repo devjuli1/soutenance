@@ -19,9 +19,20 @@ class UsersSeeder extends Seeder
             'nom'=>'YE',
             'prenom' =>'nico',
             'ville'=>'Yanyan',
+            'age' =>'25',
             'profession'=>'etudiant',
             'email' =>'nico@gmail.com',
             'password'=>Hash::make('123456'),
+            'role_id' => 1
+        ]);
+        User::create([
+            'nom'=>'OUEDRAOGO',
+            'prenom' =>'Jeannine',
+            'ville'=>'Ouagadougou',
+            'age' =>'28',
+            'profession'=>'Developpeur',
+            'email' =>'jeannine@gmail.com',
+            'password'=>Hash::make('12345678'),
             'role_id' => 1
         ]);
     }

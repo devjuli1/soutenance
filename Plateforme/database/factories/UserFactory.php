@@ -15,29 +15,31 @@ class UserFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
-    {
-        return [
-            'nom' => $this->faker->firstname(),
-            'prenom' => $this->faker->lastname(),
-            'ville' => $this->faker->city(),
-            'profession' => $this->faker->text(),
-            'email' => $this->faker->unique()->safeEmail(),
-            'role_id' =>rand(2,3),
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-         ];
-    }
+    // public function definition(): array
+    // {
+    //    return [
+    //         'nom' => $this->faker->firstname(),
+    //         'prenom' => $this->faker->lastname(),
+    //         'photo' => $this->faker->file(),
+    //         'ville' => $this->faker->city(),
+    //         'age' => $this->faker->number(),
+    //         'profession' => $this->faker->text(),
+    //         'email' => $this->faker->unique()->safeEmail(),
+    //         'role_id' =>rand(2,3),
+    //         'email_verified_at' => now(),
+    //         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+    //      ];
+    // } 
 
-    /**
-     * Indicate that the model's email address should be unverified.
-     *
-     * @return $this
-     */
-    public function unverified(): static
-    {
-        return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
-        ]);
-    }
+    // /**
+    //  * Indicate that the model's email address should be unverified.
+    //  *
+    //  * @return $this
+    //  */
+    // public function unverified(): static
+    // {
+    //     return $this->state(fn (array $attributes) => [
+    //         'email_verified_at' => null,
+    //     ]);
+    // }
 }

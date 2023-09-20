@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Accueil</title>
+    <title>Santé mentale</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -35,12 +35,15 @@
     <div class="container-fluid py-2 border-bottom d-none d-lg-block">
         <div class="container">
             <div class="row">
-                <a href="index.blade.php" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><img src="Images/logo plateforme.ico" alt="logo">Le lieu idéal pour résoudre mes problèmes</h1>
+                <a href="index" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary" text-center><img src="../Images/logo 2.jpg" alt="logo" width="70px";>Le lieu idéal pour résoudre vos problèmes</h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
+                <div class="row flex-grow">
+                <a href="{{route('connexion')}}" class="login"><i class="icofont-user"></i> <span> CONNEXION </span> </a>
+                <a href="{{route('deconnexion')}}" class="signup"><i class="icofont-users"></i> <span>DECONNEXION</span> </a>
+                </div>
+            
             </div>
         </div>
     </div>
@@ -60,12 +63,12 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="/" class="nav-item nav-link active">Accueil</a>
-                        <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+                        <a href="/" class="nav-item nav-link">Accueil</a>
+                        <a href="{{ route('about') }}" class="nav-item nav-link">A propos</a>
                         <a href="{{ route('Nos_services') }}" class="nav-item nav-link">Service</a>
                         <a href="{{ route('prix') }}" class="nav-item nav-link">Prix</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Offre</a>
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Offre</a>
                             <div class="dropdown-menu m-0">
                                 <!-- <a href="blog.html" class="dropdown-item">Blog Grid</a> -->
                                 <a href="{{ route('domaines') }}" class="dropdown-item">Catégories</a>

@@ -21,13 +21,15 @@ class fontController extends Controller
     public function contactRegister(){
         return view('contact');
     }
-    public function proposRegister(){
-        return view('A_propos');
+
+    public function offreRegister(){
+        return ('Offres');
     }
-
-
     public function temoignageRegister(){
         return view('..Offres/temoignages');
+    }
+    public function listPsychologue(){
+        return view('..Client/liste-psychologue');
     }
     public function specialiteRegister(){
         return view('..Offres/specialite_infos');

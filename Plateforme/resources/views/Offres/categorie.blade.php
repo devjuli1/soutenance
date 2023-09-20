@@ -1,4 +1,5 @@
-   <!-- Blog Start -->
+@include('component.nav')
+  <!-- Blog Start -->
    <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-8">
@@ -192,3 +193,5 @@
         </div>
     </div>
     <!-- Blog End -->
+    
+    @include('component.footer')
