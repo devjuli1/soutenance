@@ -1,93 +1,20 @@
+
+
+
 @include('component.nav')
+<div class="card container bg-light my-5 py-5 text-uppercase rounded-pill center" style="font-size:250">
+  <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-circle d-flex flex-column align-items-center justify-content-center">
+    <h5 class="text-center">Concernant nos tarifs</h5>
+    <p class="text-dark">
+    Le coût des séances de psychothérapies n'est pas fixe. Il varie en fonction des tarifs pratiqués par le ou la psychothérapeute.Ces thérapeutes exercent le plus souvent en cabinet libéral.
 
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Medical Packages</h5>
-                <h1 class="display-4">Quelques programmes pour la prise en charge</h1>
-            </div>
-            <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Pregnancy Care</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Health Checkup</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Dental Care</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-4.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Operation & Surgery</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>199<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pricing Plan End -->
+    les “psys” utilisent des méthodes différentes selon leur formation. Une méthode qui convient à une personne peut ne pas convenir à une autre. Aussi il est utile, avant de prendre rendez-vous ou lors de la première rencontre avec un “psy”, de lui demander quelle est son approche : cognitive et comportementale, psychanalytique ou autre.  Toutefois, cette possibilité varie beaucoup d’un service à l’autre.Raison pour laquelle il est dur de donner un tarif fixe pour les consultations. Notre  objectif premier est de vous faciliter l'accès aux services de soins psychologiques.</p>
+  </div>
+</div>
 
 
-    -- Appointment Start -->
-    <div class="container-fluid bg-primary my-5 py-5">
+    
+    <div class="container bg-primary my-5 py-5">
         <div class="container py-5">
             <div class="row gx-5">
                 <div class="col-lg-6 mb-5 mb-lg-0">
@@ -157,9 +84,9 @@
             </div>
         </div>
     </div>
-    <!-- Appointment End -->
+   
     
-    <!-- Team Start -->
+  
     <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
@@ -176,7 +103,7 @@
                             <div class="mt-auto p-4">
                                 <h3>Psy Edmond KAM</h3>
                                 <h4 class="fw-normal fst-italic text-primary mb-4">psychologue du travail</h4>
-                                <p class="m-0">Spécialiste en psychologie de travail, psy Edmond est operationnel en tout ce qui concerne le monde du travail, de l'entrprise. De l'organisation à la promotion des services, de la gestion du personnel à la productivité du personel. Vous vous sentez mal à l'aise dans votre service, vos études ne vont pas comme vous le souhaitez,vous avez des difficultés pour vous trouver un emploi stable et épanouissant? En voici un expert en la domaine.</p>
+                                <p class="text-dark">Spécialiste en psychologie de travail, psy Edmond est operationnel en tout ce qui concerne le monde du travail, de l'entrprise. De l'organisation à la promotion des services, de la gestion du personnel à la productivité du personel. Vous vous sentez mal à l'aise dans votre service, vos études ne vont pas comme vous le souhaitez,vous avez des difficultés pour vous trouver un emploi stable et épanouissant? En voici un expert en la domaine.</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -193,7 +120,7 @@
                             <div class="mt-auto p-4">
                                 <h3>Psy Julène KYELEM</h3>
                                 <h4 class="fw-normal fst-italic text-primary mb-4">Psychologue clinicienne</h4>
-                                <p class="m-0">Psy Julène est une psychothérapeute. Elle s'est spécialisée en psychologie positive et de la personnalité. Vous avez besoin d'être écouter, de conseil sur votre vie privée, vous voulez mieux vous connaitre, vous comprendre, avoir de l'energie pour avancer malgré les difficultés? Elle est là.</p>
+                                <p class="text-dark">Psy Julène est une psychothérapeute. Elle s'est spécialisée en psychologie positive et de la personnalité. Vous avez besoin d'être écouter, de conseil sur votre vie privée, vous voulez mieux vous connaitre, vous comprendre, avoir de l'energie pour avancer malgré les difficultés? Elle est là.</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -210,7 +137,7 @@
                             <div class="mt-auto p-4">
                                 <h3>Psy Clarisse </h3>
                                 <h4 class="fw-normal fst-italic text-primary mb-4">psychologue de l'orientation</h4>
-                                <p class="m-0">Psy Clarisse est spécialiste en orientation professionnelle. Elle évolue également dans la gestion des émotions et la prise en charge des problèmes relationnels. Vous vous sentez mal à l'aise dans votre couple, vous n'arrivez pas à maitriser vos sentiments de colère, de joie, Ce psy est le meilleur pour vous. </p>
+                                <p class="text-dark">Psy Clarisse est spécialiste en orientation professionnelle. Elle évolue également dans la gestion des émotions et la prise en charge des problèmes relationnels. Vous vous sentez mal à l'aise dans votre couple, vous n'arrivez pas à maitriser vos sentiments de colère, de joie, Ce psy est le meilleur pour vous. </p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -221,7 +148,7 @@
             </div>
         </div>
     </div>
-    <!-- Team End -->
+
 
     @include('component.footer')
 

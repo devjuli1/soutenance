@@ -52,31 +52,39 @@
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Votre Nom" style="height: 55px;">
+                                    <input type="text" name="nom" class="form-control bg-light border-0" placeholder="Votre Nom" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Votre Nom" style="height: 55px;">
+                                    <input type="text" name="prenom" class="form-control bg-light border-0" placeholder="Votre prenom" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
+                                    <input type="email" name="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="password" class="form-control bg-light border-0" placeholder="Votre mot de passe" style="height: 55px;">
+                                    <input type="password" name="password" class="form-control bg-light border-0" placeholder="Votre mot de passe" style="height: 55px;">
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+
+                                <fieldset id="field_9_5" class="gfield gfield--type-radio gfield--type-choice gf_list_inline gfield_contains_required field_sublabel_below gfield--has-description field_description_above gfield_visibility_visible" data-js-reload="field_9_5">
+                                  <legend class="gfield_label gform-field-label">La consultation est-elle pour vous-même ou pour une autre personne?<span class="gfield_required">
+                                    <span class="gfield_required gfield_required_asterisk">*</span>
+                                  </legend>
+                                   <div class="ginput_container ginput_container_radio">
+                                    <div class="gfield_radio" id="input_9_5 col-12">
+			                          <div class="gchoice gchoice_9_5_0 col-12 col-sm-6">
+					                    <input class="gfield-choice-input" name="input_5" type="radio" value="Moi-même" id="choice_9_5_0" onchange="gformToggleRadioOther( this )" aria-describedby="gfield_description_9_5">
+					                    <label for="choice_9_5_0" id="label_9_5_0" class="gform-field-label gform-field-label--type-inline">Moi-même</label>
+			                          </div>
+			                          <div class="gchoice gchoice_9_5_1 col-12 col-sm-6">
+					                    <input class="gfield-choice-input" name="input_5" type="radio" value="Une autre personne" id="choice_9_5_1" onchange="gformToggleRadioOther( this )">
+					                    <label for="choice_9_5_1" id="label_9_5_1" class="gform-field-label gform-field-label--type-inline">Une autre personne</label>
+			                          </div>
                                     </div>
+                                   </div>                               
+                                </fieldset>
+                                <div id="field_9_10" class="gfield gfield--type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_9_10"><h3>Politique de confidentialité</h3>
+                                        <p>Veuillez prendre note que ce courriel est traité en toute confidentialité par l'équipe d'accueil de notre plateforme.</p>
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
+                            
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Prendre rendez-vous</button>
                                 </div>

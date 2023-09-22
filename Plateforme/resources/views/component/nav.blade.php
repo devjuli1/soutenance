@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Santé mentale</title>
+    <title>Accueil</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -38,12 +38,13 @@
                 <a href="index" class="navbar-brand">
                     <h1 class="m-0 text-uppercase text-primary" text-center><img src="../Images/logo 2.jpg" alt="logo" width="70px";>Le lieu idéal pour résoudre vos problèmes</h1>
                 </a>
-                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
                 <div class="row flex-grow">
-                <a href="{{route('connexion')}}" class="login"><i class="icofont-user"></i> <span> CONNEXION </span> </a>
-                <a href="{{route('deconnexion')}}" class="signup"><i class="icofont-users"></i> <span>DECONNEXION</span> </a>
+                <a href="{{route('connexion')}}" class="login"><i class="icofont-user"></i> <span>SE CONNECTER </span> </a>
+                <a href="{{route('deconnexion')}}" class="signup"><i class="icofont-users"></i> <span>SE DECONNECTER</span> </a>
                 </div>
-            
+                </button>
             </div>
         </div>
     </div>

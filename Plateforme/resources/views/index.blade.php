@@ -50,9 +50,8 @@
     </div>
     <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top bg-white shadow-sm">
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top bg-white shadow-sm">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
@@ -64,8 +63,8 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="/" class="nav-item nav-link active">Accueil</a>
-                        <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+                        <a href="/" class="nav-item nav-link">Accueil</a>
+                        <a href="{{ route('about') }}" class="nav-item nav-link">A propos</a>
                         <a href="{{ route('Nos_services') }}" class="nav-item nav-link">Service</a>
                         <a href="{{ route('prix') }}" class="nav-item nav-link">Prix</a>
                         <div class="nav-item dropdown">
@@ -172,6 +171,9 @@
                                 <h6 class="fw-normal fst-italic text-primary mb-4">psychologue du travail</h6>
                                 <p class="m-0">Spécialiste en psychologie de travail, psy Edmond est operationnel en tout ce qui concerne le monde du travail, de l'entrprise. De l'organisation à la promotion des services, de la gestion du personnel à la productivité du personel. Vous vous sentez mal à l'aise dans votre service, vos études ne vont pas comme vous le souhaitez,vous avez des difficultés pour vous trouver un emploi stable et épanouissant? En voici un expert en la domaine.</p>
                             </div>
+                            <div class="d-flex mt-auto border-top p-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,8 +202,11 @@
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
                                 <h3>Psy Clarisse </h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">psychologue de l'orientation</h6>
-                                <p class="m-0">Psy Clarisse est spécialiste en orientation professionnelle. Elle évolue également dans la gestion des émotions et la prise en charge des problèmes relationnels. Vous vous sentez mal à l'aise dans votre couple, vous n'arrivez pas à maitriser vos sentiments de colère, de joie, Ce psy est le meilleur pour vous. </p>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">psychologue</h6>
+                                <p class="m-0">Psy Clarisse est spécialiste en gestion émotionnelle. Elle évolue également dans la gestion des émotions et la prise en charge des problèmes relationnels. Vous vous sentez mal à l'aise dans votre couple, vous n'arrivez pas à maitriser vos sentiments de colère, de joie, Ce psy est le meilleur pour vous. </p>
+                            </div>
+                            <div class="d-flex mt-auto border-top p-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
                             </div>
                         </div>
                     </div>
