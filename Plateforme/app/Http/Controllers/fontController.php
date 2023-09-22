@@ -10,6 +10,9 @@ class fontController extends Controller
     public function indexRegister(){
         return view('index');
     }
+    public function servicesRegister(){
+        return view('services');
+    }
     public function serviceRegister(){
         return view('..services/service');
     }

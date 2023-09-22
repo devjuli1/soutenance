@@ -72,14 +72,9 @@
                                 <!-- <a href="blog.html" class="dropdown-item">Blog Grid</a> -->
                                 <a href="{{ route('meet') }}" class="dropdown-item">Rendez-Vous</a>
                                 <a href="{{ route('temoin') }}" class="dropdown-item">Temoignages</a>
-                                <div class="nav-item dropdown">
-                                 <a href="{{ route('offre') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Offres</a>
-                                   <div class="dropdown-menu m-0">
-                                       <a href="{{ route('domaines') }}" class="dropdown-item">Catégories</a>
-                                       <a href="{{ route('specialiste') }}" class="dropdown-item">Spécialistes</a> 
-                                       <a href="{{ route('theme_psy') }}" class="dropdown-item">Thèmes_psy</a>
-                                   </div>
-                                </div>
+                                <a href="{{ route('domaines') }}" class="dropdown-item">Catégories</a>
+                                <a href="{{ route('specialiste') }}" class="dropdown-item">Spécialistes</a> 
+                                <a href="{{ route('theme_psy') }}" class="dropdown-item">Thèmes_psy</a>
                             </div>
                         </div> 
                         <a href="{{ route('propos') }}" class="nav-item nav-link">A propos</a>

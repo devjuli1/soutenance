@@ -21,9 +21,9 @@ use App\Http\Controllers\PsyController;
 
  Route::get('/',[fontController::class,'indexRegister'])->name('index');
  Route::get('/Nos_services',[fontController::class,'serviceRegister'])->name('Nos_services');
+ Route::get('/offre',[fontController::class,'servicesRegister'])->name('services');
  Route::get('/meet',[fontController::class,'RDVRegister'])->name('meet'); 
  Route::get('/temoin',[fontController::class,'temoignageRegister'])->name('temoin');
- Route::get('/offre',[fontController::class,'offreRegister'])->name('offre'); 
  Route::get('/spécialités',[fontController::class,'categorieRegister'])->name('domaines'); 
  Route::get('/Nos_Psy',[fontController::class,'specialisteRegister'])->name('specialiste'); 
  Route::get('/theme_psy',[fontController::class,'themeRegister'])->name('theme_psy');

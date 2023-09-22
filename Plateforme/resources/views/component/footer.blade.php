@@ -13,7 +13,7 @@
                         <a class="text-light mb-2" href="{{route('propos')}}"><i class="fa fa-angle-right me-2">A propos</i></a>
                         <a class="text-light mb-2" href="{{route('Nos_services')}}"><i class="fa fa-angle-right me-2">Services</i></a>
                         <a class="text-light mb-2" href="{{route('blog')}}"><i class="fa fa-angle-right me-2"></i>Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contactez-nous</a>
+                        <a class="text-light" href="{{route('contact')}}"><i class="fa fa-angle-right me-2"></i>Contactez-nous</a>
                     </div>
                 </div>
             </div>
