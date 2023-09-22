@@ -57,9 +57,11 @@
                         </rendez-vous></h1>
                         <h4 class="display-4">Faites vos rendez-vous ici</h4>
                     </div>
-                    <p class="text-white mb-5"><h5 class="text-white fw-normal">Nos psychologues dotés d'une grande capacité d'écoute, préviennent, conseillent et accompagnent des patients souffrant de troubles du comportement ou de personnalité, des troubles moraux, psychiques, ponctuels ou chroniques, traversant des situations difficiles comme problèmes de relation amoureuse, deuil, incapacité de se positionner. Ils aident les professionnels soumis à une certaine pression, s'occupent de la prévention des risques professionnels, permettent des bilans de compétences, de la gestion de carriere, de la mobilité professionnelle, mettent en place des thérapies individuelles ou collectives adoptées dans le respect et le developpement du droit des personnes et de leur dignité.Nos spécialistes adressent à tous d'être en meilleure santé mentale, plus performants, engagés créatifs et équilibrés. Que tu sois enfant, adolescents, adultes, handicapés...</h5> </p>
-                         <a class="btn btn-dark display-4 rounded-pill mx-2 me-2 " href="{{route('list_psy')}}">Quel psychologue me convient?</a>
-                         <a class="btn btn-outline-dark display-4 rounded-pill  " class="col-md-6 text-center text-" href="{{route('domaines')}}">Découvrir quelques termes de la psychologie</a>
+                    <div class="pt-2">
+                       <p class="text-white mb-5"><h5 class="text-white fw-normal">Nos psychologues dotés d'une grande capacité d'écoute, préviennent, conseillent et accompagnent des patients souffrant de troubles du comportement ou de personnalité, des troubles moraux, psychiques, ponctuels ou chroniques, traversant des situations difficiles comme problèmes de relation amoureuse, deuil, incapacité de se positionner. Ils aident les professionnels soumis à une certaine pression, s'occupent de la prévention des risques professionnels, permettent des bilans de compétences, de la gestion de carriere, de la mobilité professionnelle, mettent en place des thérapies individuelles ou collectives adoptées dans le respect et le developpement du droit des personnes et de leur dignité.Nos spécialistes adressent à tous d'être en meilleure santé mentale, plus performants, engagés créatifs et équilibrés. Que tu sois enfant, adolescents, adultes, handicapés...</h5> </p>
+                           <a href="{{route('specialiste')}}" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Quel psychologue me convient?</a>
+                           <a href="{{route('domaines')}}" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Découvrir quelques termes de la psychologie</a>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-white text-center rounded p-5">

@@ -65,20 +65,25 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="/" class="nav-item nav-link">Accueil</a>
-                        <a href="{{ route('about') }}" class="nav-item nav-link">A propos</a>
-                        <a href="{{ route('Nos_services') }}" class="nav-item nav-link">Service</a>
-                        <a href="{{ route('prix') }}" class="nav-item nav-link">Prix</a>
+                        <a href="{{ route('Nos_services') }}" class="nav-item nav-link"></a>
                         <div class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Offre</a>
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu m-0">
                                 <!-- <a href="blog.html" class="dropdown-item">Blog Grid</a> -->
-                                <a href="{{ route('domaines') }}" class="dropdown-item">Catégories</a>
-                                <a href="{{ route('specialité') }}" class="dropdown-item">Spécialités_infos</a>
-                                <a href="{{ route('temoin') }}" class="dropdown-item">Temoignages</a>
                                 <a href="{{ route('meet') }}" class="dropdown-item">Rendez-Vous</a>
-                                <a href="{{ route('info') }}" class="dropdown-item">Recherche</a>
+                                <a href="{{ route('temoin') }}" class="dropdown-item">Temoignages</a>
+                                <div class="nav-item dropdown">
+                                 <a href="{{ route('offre') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Offres</a>
+                                   <div class="dropdown-menu m-0">
+                                       <a href="{{ route('domaines') }}" class="dropdown-item">Catégories</a>
+                                       <a href="{{ route('specialiste') }}" class="dropdown-item">Spécialistes</a> 
+                                       <a href="{{ route('theme_psy') }}" class="dropdown-item">Thèmes_psy</a>
+                                   </div>
+                                </div>
                             </div>
-                        </div>
+                        </div> 
+                        <a href="{{ route('propos') }}" class="nav-item nav-link">A propos</a>
+                        <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
                         <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>

@@ -6,41 +6,68 @@ use Illuminate\Http\Request;
 
 class fontController extends Controller
 {
+    // component menu/ start menu
     public function indexRegister(){
         return view('index');
     }
-    public function aboutRegister(){
-        return view('about');
-    }
     public function serviceRegister(){
-        return view('service');
+        return view('..services/service');
     }
-    public function priceRegister(){
-        return view('prix');
-    }
-    public function contactRegister(){
-        return view('contact');
-    }
-
-    public function offreRegister(){
-        return ('Offres');
+    // component services
+    public function RDVRegister(){
+        return view('..services/RDV');
     }
     public function temoignageRegister(){
-        return view('..Offres/temoignages');
+        return view('..services/temoignages');
     }
-    public function listPsychologue(){
-        return view('..Client/liste-psychologue');
+    public function offreRegister(){
+        return ('Offre');
     }
-    public function specialiteRegister(){
-        return view('..Offres/specialite_infos');
+
+// component offre
+    public function categorieRegister(){
+        return view('..Offre/categorie');
+    }
+    public function specialisteRegister(){
+        return view('..Offre/specialiste');
+    }
+    public function themeRegister(){
+        return view('..Offre/theme_psy');
+    }
+
+// end menu
+    public function aboutRegister(){
+        return view('/propos');
+    }
+    public function blogRegister(){
+        return view('/blog');
+    }
+    public function contactRegister(){
+        return view('/contact');
     }
     public function rechercheRegister(){
-        return view('..Offres/recherche');
+        return view('/recherche');
     }
-    public function RDVRegister(){
-        return view('..Offres/RDV');
+    
+// dashbords
+    public function homeClient(){
+        return view('..dashbord/espaceClient');
     }
-    public function categorieRegister(){
-        return view('..Offres/categorie');
+    public function homePsy(){
+        return view('..dashbord/espacePsy');
     }
+    public function homeAdmin(){
+        return view('..dashbord/espaceAdmin');
+    }
+
+// component admin
+    public function listPsychologue(){
+        return view('..admin/list_psy');
+    }
+    public function listClient(){
+        return view('..admin/list_client');
+    }
+    
+   
+   
 }

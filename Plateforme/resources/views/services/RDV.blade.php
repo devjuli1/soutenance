@@ -12,9 +12,11 @@
                         </rendez-vous></h1>
                         <h4 class="display-4">Faites vos rendez-vous ici</h4>
                     </div>
-                    <p class="text-white mb-5"><h5 class="text-white fw-normal">Nos psychologues dotés d'une grande capacité d'écoute, préviennent, conseillent et accompagnent des patients souffrant de troubles du comportement ou de personnalité, des troubles moraux, psychiques, ponctuels ou chroniques, traversant des situations difficiles comme problèmes de relation amoureuse, deuil, incapacité de se positionner. Ils aident les professionnels soumis à une certaine pression, s'occupent de la prévention des risques professionnels, permettent des bilans de compétences, de la gestion de carriere, de la mobilité professionnelle, mettent en place des thérapies individuelles ou collectives adoptées dans le respect et le developpement du droit des personnes et de leur dignité.Nos spécialistes adressent à tous d'être en meilleure santé mentale, plus performants, engagés créatifs et équilibrés. Que tu sois enfant, adolescents, adultes, handicapés...</h5> </p>
-                         <a class="btn btn-dark display-4 rounded-pill mx-2 me-2 " href="">Quel psychologue me convient?</a>
-                         <a class="btn btn-outline-dark display-4 rounded-pill  " class="col-md-6 text-center text-" href="">Découvrir quelques termes de la psychologie</a>
+                    <div class="pt-2">
+                       <p class="text-white mb-5"><h5 class="text-white fw-normal">Nos psychologues dotés d'une grande capacité d'écoute, préviennent, conseillent et accompagnent des patients souffrant de troubles du comportement ou de personnalité, des troubles moraux, psychiques, ponctuels ou chroniques, traversant des situations difficiles comme problèmes de relation amoureuse, deuil, incapacité de se positionner. Ils aident les professionnels soumis à une certaine pression, s'occupent de la prévention des risques professionnels, permettent des bilans de compétences, de la gestion de carriere, de la mobilité professionnelle, mettent en place des thérapies individuelles ou collectives adoptées dans le respect et le developpement du droit des personnes et de leur dignité.Nos spécialistes adressent à tous d'être en meilleure santé mentale, plus performants, engagés créatifs et équilibrés. Que tu sois enfant, adolescents, adultes, handicapés...</h5> </p>
+                           <a href="{{route('specialiste')}}" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Quel psychologue me convient?</a>
+                           <a href="{{route('domaines')}}" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Découvrir quelques termes de la psychologie</a>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-white text-center rounded p-5">
@@ -62,29 +64,6 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="password" name="password" class="form-control bg-light border-0" placeholder="Votre mot de passe" style="height: 55px;">
-                                </div>
-
-                                <fieldset id="field_9_5" class="gfield gfield--type-radio gfield--type-choice gf_list_inline gfield_contains_required field_sublabel_below gfield--has-description field_description_above gfield_visibility_visible" data-js-reload="field_9_5">
-                                  <legend class="gfield_label gform-field-label">La consultation est-elle pour vous-même ou pour une autre personne?<span class="gfield_required">
-                                    <span class="gfield_required gfield_required_asterisk">*</span>
-                                  </legend>
-                                   <div class="ginput_container ginput_container_radio">
-                                    <div class="gfield_radio" id="input_9_5 col-12">
-			                          <div class="gchoice gchoice_9_5_0 col-12 col-sm-6">
-					                    <input class="gfield-choice-input" name="input_5" type="radio" value="Moi-même" id="choice_9_5_0" onchange="gformToggleRadioOther( this )" aria-describedby="gfield_description_9_5">
-					                    <label for="choice_9_5_0" id="label_9_5_0" class="gform-field-label gform-field-label--type-inline">Moi-même</label>
-			                          </div>
-			                          <div class="gchoice gchoice_9_5_1 col-12 col-sm-6">
-					                    <input class="gfield-choice-input" name="input_5" type="radio" value="Une autre personne" id="choice_9_5_1" onchange="gformToggleRadioOther( this )">
-					                    <label for="choice_9_5_1" id="label_9_5_1" class="gform-field-label gform-field-label--type-inline">Une autre personne</label>
-			                          </div>
-                                    </div>
-                                   </div>                               
-                                </fieldset>
-                                <div id="field_9_10" class="gfield gfield--type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_9_10"><h3>Politique de confidentialité</h3>
-                                        <p>Veuillez prendre note que ce courriel est traité en toute confidentialité par l'équipe d'accueil de notre plateforme.</p>
-                                </div>
-                            
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Prendre rendez-vous</button>
                                 </div>
@@ -255,79 +234,28 @@
     <!-- Testimonial End -->
 
 
+    <!-- <fieldset id="field_9_5" class="gfield gfield--type-radio gfield--type-choice gf_list_inline gfield_contains_required field_sublabel_below gfield--has-description field_description_above gfield_visibility_visible" data-js-reload="field_9_5">
+                                  <legend class="gfield_label gform-field-label">La consultation est-elle pour vous-même ou pour une autre personne?<span class="gfield_required">
+                                    <span class="gfield_required gfield_required_asterisk">*</span>
+                                  </legend>
+                                   <div class="ginput_container ginput_container_radio">
+                                    <div class="gfield_radio" id="input_9_5 col-12">
+			                          <div class="gchoice gchoice_9_5_0 col-12 col-sm-6">
+					                    <input class="gfield-choice-input" name="input_5" type="radio" value="Moi-même" id="choice_9_5_0" onchange="gformToggleRadioOther( this )" aria-describedby="gfield_description_9_5">
+					                    <label for="choice_9_5_0" id="label_9_5_0" class="gform-field-label gform-field-label--type-inline">Moi-même</label>
+			                          </div>
+			                          <div class="gchoice gchoice_9_5_1 col-12 col-sm-6">
+					                    <input class="gfield-choice-input" name="input_5" type="radio" value="Une autre personne" id="choice_9_5_1" onchange="gformToggleRadioOther( this )">
+					                    <label for="choice_9_5_1" id="label_9_5_1" class="gform-field-label gform-field-label--type-inline">Une autre personne</label>
+			                          </div>
+                                    </div>
+                                   </div>                               
+                                </fieldset>
+                                <div id="field_9_10" class="gfield gfield--type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible" data-js-reload="field_9_10"><h3>Politique de confidentialité</h3>
+                                        <p>Veuillez prendre note que ce courriel est traité en toute confidentialité par l'équipe d'accueil de notre plateforme.</p>
+                                </div>
+                             -->
 
-    <!-- Blog Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Blog Post</h5>
-                <h1 class="display-4">Our Latest Medical Blog Posts</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-xl-4 col-lg-6">
-                    <div class="bg-light rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
-                        <div class="p-4">
-                            <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
-                            <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                                rebum clita rebum dolor stet amet justo</p>
-                        </div>
-                        <div class="d-flex justify-content-between border-top p-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
-                                <small>John Doe</small>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
-                                <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="bg-light rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/blog-2.jpg" alt="">
-                        <div class="p-4">
-                            <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
-                            <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                                rebum clita rebum dolor stet amet justo</p>
-                        </div>
-                        <div class="d-flex justify-content-between border-top p-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
-                                <small>John Doe</small>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
-                                <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="bg-light rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="img/blog-3.jpg" alt="">
-                        <div class="p-4">
-                            <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
-                            <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
-                                rebum clita rebum dolor stet amet justo</p>
-                        </div>
-                        <div class="d-flex justify-content-between border-top p-4">
-                            <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
-                                <small>John Doe</small>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
-                                <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
     
 
     @include('component.footer')

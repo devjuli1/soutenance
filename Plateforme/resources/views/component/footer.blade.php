@@ -10,8 +10,9 @@
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Lien rapide</h4>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="/"><i class="fa fa-angle-right me-2"></i>Accueil</a>
-                        <a class="text-light mb-2" href="{{route('about')}}"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="{{route('offre')}}"><i class="fa fa-angle-right me-2"></i>Nos Offres</a>
+                        <a class="text-light mb-2" href="{{route('propos')}}"><i class="fa fa-angle-right me-2">A propos</i></a>
+                        <a class="text-light mb-2" href="{{route('Nos_services')}}"><i class="fa fa-angle-right me-2">Services</i></a>
+                        <a class="text-light mb-2" href="{{route('blog')}}"><i class="fa fa-angle-right me-2"></i>Blog</a>
                         <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contactez-nous</a>
                     </div>
                 </div>
