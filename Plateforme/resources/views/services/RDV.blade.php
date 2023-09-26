@@ -21,7 +21,8 @@
                 <div class="col-lg-6">
                     <div class="bg-white text-center rounded p-5">
                         <h1 class="mb-4">Le formulaire du rendez-vous</h1>
-                        <form>
+                        <form action="" method="post">
+                            @csrf
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select bg-light border-0" style="height: 55px;">
@@ -64,7 +65,8 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="password" name="password" class="form-control bg-light border-0" placeholder="Votre mot de passe" style="height: 55px;">
-                                <div class="col-12">
+                                </div>
+                                <div class="col-12 col-sm-6">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Prendre rendez-vous</button>
                                 </div>
                             </div>

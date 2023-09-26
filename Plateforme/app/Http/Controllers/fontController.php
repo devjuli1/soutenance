@@ -20,8 +20,10 @@ class fontController extends Controller
     public function RDVRegister(){
         return view('..services/RDV');
     }
+    // $temoignages=elt a recuperer, temoignage= la table model, ensuite ds view pr la suite
     public function temoignageRegister(){
-        return view('..services/temoignages');
+          $temoignages = temoignage::all();
+        return view('..services/temoignages',compact('temoignages'));
     }
     public function offreRegister(){
         return ('Offre');

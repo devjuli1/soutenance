@@ -2,7 +2,8 @@
 
  
                 <!-- Comment List Start -->
-                <div class="mb-5">
+                <div class="mb-5 container">
+                    @foreach($temoignages as $temoignage)
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 mb-4">3 Commentaires</h4>
                     <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -41,33 +42,35 @@
                                     <i class="fa fa-quote-left fa-2x text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-4 fw-normal">J'étais victime de l'harcelement et de la violence sexuelle. j'etais renfermée en moi même, nerveuse, facilement influençable et cela me detruisais interieurement, et m'empechais d'être productive au service sans que je ne puisse parler à personne. La decouverte de cette plateforme et leur service m'a donné un nouveau rayon de vie et m'a aidé à reprendre les rènes de ma vie.</p>
+                            <p class="fs-4 fw-normal">{{$temoignage->comment}}</p>
+                            <!-- <p class="fs-4 fw-normal">J'étais victime de l'harcelement et de la violence sexuelle. j'etais renfermée en moi même, nerveuse, facilement influençable et cela me detruisais interieurement, et m'empechais d'être productive au service sans que je ne puisse parler à personne. La decouverte de cette plateforme et leur service m'a donné un nouveau rayon de vie et m'a aidé à reprendre les rènes de ma vie.</p> -->
                             <hr class="w-25 mx-auto">
-                            <h3>Mao</h3>
+                            <h3>{{$temoignage->user->nom}} </h3>
                             <small><i>21 Septembre 2023</i></small>
-                            <h6 class="fw-normal text-primary mb-3">Profession</h6>
+                            <h6 class="fw-normal text-primary mb-3">{{$temoignage->comment}}</h6>
                             <button class="btn btn-sm btn-light">Repondre</button>
                             <hr class="w-25 mx-auto">
                         </div>
+                        @endforeach
                 </div>
                 <!-- Comment List End -->
 
                 <!-- Comment Form Start -->
-                <div class="bg-light rounded p-5">
+                <div class="bg-light rounded p-5 container">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-white mb-4">Laisser votre commentaire</h4>
                     <form>
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-white border-0" placeholder="Votre nom" style="height: 55px;">
+                                <input type="text" name="nom" class="form-control bg-white border-0" placeholder="Votre nom" style="height: 55px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-white border-0" placeholder="Votre prenom" style="height: 55px;">
+                                <input type="text" name="prenom" class="form-control bg-white border-0" placeholder="Votre prenom" style="height: 55px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control bg-white border-0" placeholder="Votre email" style="height: 55px;">
+                                <input type="email" name="email" class="form-control bg-white border-0 d-flex-justify-content-center" placeholder="Votre email" style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control bg-white border-0" rows="5" placeholder="Commentaire"></textarea>
+                                <textarea class="form-control bg-white border-0 "name="comment" rows="5" placeholder="Commentaire"></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Mon commentaire</button>

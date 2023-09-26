@@ -1,6 +1,5 @@
 @include('component.nav')
 
-
    <!-- Contact Start -->
    <div class="container-fluid pt-5">
         <div class="container">
@@ -32,14 +31,11 @@
                         <form action="{{route('storeConnexion')}}" method='post'>
                             @csrf
                             <div class="row g-3">
-                                <div class="col-12 col-sm-6">
+                                <div class="col-12 ">
                                     <input type="email" name='email' class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
                                 </div>
-                                <div class="col-12 col-sm-6" >
+                                <div class="col-12" >
                                     <input type="password" name='password'class="form-control bg-light border-0" placeholder="Mot de passe" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="checkbox"> Je jure que toutes les informations renseignées sont vraies et je repondrai en cas de tentative de falcification </label> 
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Se connecter</button>
