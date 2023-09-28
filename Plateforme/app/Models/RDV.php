@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class RDV extends Model
 {
     use HasFactory;
+    protected $fillable =[
+        'motif_consultation',
+        'consultant',
+        'email',
+        'password',
+        'user-id',
+    ];
 }
